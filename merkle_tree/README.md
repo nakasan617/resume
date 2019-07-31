@@ -68,3 +68,5 @@
 	of course you can clean by 
 		./control.sh clean
 
+# PROSPECT
+	I am trying to implement this to the version control system. 
