@@ -149,17 +149,20 @@ def main():
     ofile = "time_merkle_tree_compare.png"
     labels = ["txt", "pdf", "docx", "NetCDF", "HDF5"]
     make_each_graph(ifiles[0], ofiles[0], labels[0])
+    '''
     make_each_graph(ifiles[1], ofiles[1], labels[1]) 
     make_each_graph(ifiles[2], ofiles[2], labels[2]) 
     make_each_graph(ifiles[3], ofiles[3], labels[3]) 
     make_each_graph(ifiles[4], ofiles[4], labels[4]) 
+    '''
    
-    make_compare_graph(ifiles[1:], ofile, labels[1:]) 
+    #make_compare_graph(ifiles[1:], ofile, labels[1:]) 
     
     ifile = "separate_create_merkle_txt.csv" 
     ofile = "time_portion_txt.png" 
     make_portion_graph(ifile, ofile, 8) 
-    
+
+    '''    
     ifile = "separate_create_merkle_binary_txt.csv" 
     ofile = "time_portion_txt_binary.png" 
     make_portion_graph(ifile, ofile, 8) 
@@ -179,6 +182,6 @@ def main():
     ifile = "separate_create_merkle_hdf5.csv" 
     ofile = "time_portion_hdf5.png" 
     make_portion_graph(ifile, ofile, 8)  
-
+    '''
 
 main()

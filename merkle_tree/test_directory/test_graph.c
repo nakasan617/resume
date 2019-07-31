@@ -526,11 +526,12 @@ int main() {
 	
 	text();
 	text_binary();
+	/*
 	pdf(); 
 	docx();
 	NetCDF();
 	h5();
-
+	*/
 	if(text_separate() == -1) { 
 		perror("text_separate failed\n");
 		return EXIT_FAILURE;
@@ -539,6 +540,7 @@ int main() {
 		perror("text_binary_separate failed\n");
 		return EXIT_FAILURE;
 	}
+	/*
 	if(pdf_separate() == -1) { 
 		perror("pdf_separate failed\n");
 		return EXIT_FAILURE;
@@ -555,6 +557,6 @@ int main() {
 		perror("hdf5_separate failed\n");
 		return EXIT_FAILURE;
 	}
-
+	*/
 	return EXIT_SUCCESS;
 }
