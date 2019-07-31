@@ -80,33 +80,7 @@ int compare_recompute_nodes(node * current, int cur_height, int tree_height, cha
 int get_tree_height(merkle_tree * mt);
 
 size_t get_nb_leaves(merkle_tree * mt);
-//MULTI THREADED----------------------------------------------------------------
-
-//Fills the data of leaves with a parsed file.
-int set_tree_datas(merkle_tree *mt, char **datas);
-
-//Computes the Merkle tree of the datas. Multithreaded API.
-int m_build_tree(merkle_tree *mt, char **datas, int nb_of_threads);
-
-//Hashes the data of several nodes. Multithreaded API.
-void *m_hash_nodes(void *arg);
-
 //------------------------------------------------------------------------------
-
-//Prints whole tree.
-int print_tree(merkle_tree *mt);
-
-//Changes pages of tree and recomputes hashes.
-int change_and_rebuild(merkle_tree *mt, int indexes[], char **datas, int number, int mode);
-
-//Prints differences between two Merkle trees.
-void compare_trees(merkle_tree *mt_a, merkle_tree *mt_b, int index);
-
-//Formats Merkle tree to string.
-void tree_to_string(merkle_tree *mt, char tree[]);
-
-//Fills tree with hashes in string.
-void string_to_tree(merkle_tree *mt, char *tree_string);
 
 //Frees Merkle tree.
 void free_merkle(merkle_tree *mt);
