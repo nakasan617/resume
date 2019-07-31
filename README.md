@@ -23,7 +23,7 @@ The game is, obviously, computationally intensive, because strategy set grows ex
 
 ## 3. Neural Network implementation from scratch in python
 ### BRIEF EXPLANATION 
-This is the python implementation over the data ______.  
+This is the python implementation over the data of MNIST.  
 I made this to gain more understanding over the algorithm. 
 
 ### THE PURPOSE OF THE POST
