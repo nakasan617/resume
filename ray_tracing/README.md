@@ -1,3 +1,3 @@
-### I HAVE IMPLEMENTED THE SERIAL VERSION AND PARALLEL VERSION HERE
+I have implemented the serial version and parallel version here
 
-### SERIAL VERSION IS... SIMPLE IMPLEMENTATION, WHEREAS PARALLEL VERSION I HAVE IMPLEMENTED USING GPU AND COMPUTATION RESULT CAN BE SEEN ON parallel.png 
+Serial version is... simple implementation, whereas parallel version i have implemented using gpu and computation result can be seen on parallel.png 
