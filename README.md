@@ -29,4 +29,8 @@ I made this to gain more understanding over the algorithm.
 ### THE PURPOSE OF THE POST
 To show my mathematical understanding of the machine learning algorithms, and my ability to use python libraries, mainly numpy and pandas 
  
+## 4. Ray Tracing using GPU
+### BRIEF EXPLANATION
+This is to compute Ray Tracing, method for rendering objects with light interactions.  
+This uses cuda, which uses GPU to do parallel computing.
 
