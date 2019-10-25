@@ -2,6 +2,11 @@ General Explanation
 -------------------
 I have implemented Pattern-Oriented-Split tree which was the concept coin in the paper http://www.vldb.org/pvldb/vol11/p1137-wang.pdf, on one of the projects that does the content-defined chunking for the storage of the data. This implementation is valuable for the efficiency testing of Pattern-Oriented-Split tree and is a prototype of the implementation on Sciunit, developed by Dr. Tanu Malik's laboratory in DePaul University.
 
+The changed files include:
+POS\_phase.c 
+destor.c
+do\_backup.c
+
 
 ## Below is the README.md of the original file, which is available on https://github.com/fomy/destor
 
