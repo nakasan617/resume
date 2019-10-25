@@ -1,13 +1,10 @@
 # projects for my resume
 Projects shown in the resume
 
-## 1. merkle tree implementation in C
+## 1. POS implementation on destor
 ### BRIEF EXPLANATION
-This is hash tree implemented in C. 
-The technique is used in many places including block chain and version control. The technique allows the fast and efficient verification of the data by using hash, and tree data structure. 
-
+This is the Pattern-Oriented-Split tree implemented on destor. It is the 
 ### THE PURPOSE OF THE POST
-I posted this mainly to show my understanding of pointers, but there are somewhat algorithmically interesting parts using recursive functions. 
 
 ## 2. undefeatable tic-tac-toe
 ### BRIEF EXPLANATION
