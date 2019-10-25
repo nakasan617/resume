@@ -3,8 +3,16 @@ Projects shown in the resume
 
 ## 1. POS implementation on destor
 ### BRIEF EXPLANATION
-This is the Pattern-Oriented-Split tree implemented on destor. It is the 
+This is the Pattern-Oriented-Split tree implemented on destor. It is a mixture of Merkle Tree and B+ tree and used for the faster retrieval of the data. This tree structure has been implemented due to the difficulty of implementing Merkle tree on top of content defined chunks made by rabin fingerprint. 
+It currently has the implementation of basic POS tree, which is written in the 
+POS phase of the backup operation.
+What needs to be implemented in the next 3 weeks is the implementation of restoration module and client side implementation.
+
 ### THE PURPOSE OF THE POST
+This is what I do as a research, it should contribute to the field by showing a new concept that is publicly available.
+
+### NOTE
+To configure the program, there is a dependency problem of glib.h, libglib.so, and libssl-dev for the SHA-1 calculation, which is specified in the README in the directory.
 
 ## 2. undefeatable tic-tac-toe
 ### BRIEF EXPLANATION
