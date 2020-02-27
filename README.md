@@ -7,6 +7,9 @@ This is the data structure I work on in the current lab. In the case of other ve
 <br />This data structure called Merkle tree does not cope well with the chunks that are cut with Rabin fingerprint, because of chunk shift problem. Chunk shift problem occurs whenever the boundary window of the chunk has been modified. The modification either creates new chunk or concatenate two chunks, which would shift the chunks on the right either towards right (when new chunk is created) or left (when two chunks are concatenated). If chunk shift happens, the whole structure of Merkle tree is changed, therefore we would not be able to take advantage of the data structure. 
 <br />To prevent this, Wang et al. (2018) has thought of new data structure called POS tree. The basic idea is to use the content-defined-chunking (i.e. similar to Rabin fingerprint) for the internal nodes as well. This resolves the problem because each internal nodes are cut due to its content, not by the number of children. I also added hashmap in the data structure so that the lookup can be done in a constant time, which is not mentioned in the paper. 
 
+### HOW THIS IS USED IN THE STUDY
+This will be on the server side of the version control system for executions to reduce the amount of chunks by deduplication. On top of this, to reduce the number of chunks on the client side, a client side will ptrace the modification of the chunks. Whenever there is a communication between a server and the client, it only sends the chunks that are modified in the server and on the server side, the POS tree is updated.
+
 ### NOTE
 This data structure implements the hash value in SHA-1, which we know it is broken, yet we used it for the simplicity. 
 
