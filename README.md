@@ -1,18 +1,12 @@
 # projects for my resume
 Projects shown in the resume
 
-## 1. POS implementation on destor
-### BRIEF EXPLANATION
-This is the Pattern-Oriented-Split tree implemented on destor. It is a mixture of Merkle Tree and B+ tree and used for the faster retrieval of the data. This tree structure has been implemented due to the difficulty of implementing Merkle tree on top of content defined chunks made by rabin fingerprint. 
-It currently has the implementation of basic POS tree, which is written in the 
-POS phase of the backup operation.
-What needs to be implemented in the next 3 weeks is the implementation of restoration module and client side implementation.
-
-### THE PURPOSE OF THE POST
-This is what I do as a research, it should contribute to the field by showing a new concept that is publicly available.
+## 1. POS implementation
+### EXPLANATION
+This is the data structure I work on in the current lab. In the case of other version control systems such as GitHub, Mercury, subversions, Merkle trees are used for the network communications. Merkle tree is n-ary tree with the hash value of each file in the repository at leaf nodes. Internal nodes have the hash value of the concatenated hash value of children nodes. This data structure enables check of the bundle of chunks at once, because, assuming there is no hash collision, if a parent node's hash turns out to be the same, it is the same. This fits the case of version control system, where most of the files remain the same for each versions. Whenever the system finds different files by computing the hash values, it updates the leaf nodes as well as internal nodes that has the leaf nodes at the end of the tree. <br />This data structure called Merkle tree does not cope well with the chunks that are cut with Rabin fingerprint, because of chunk shift problem. Chunk shift problem occurs whenever the boundary window of the chunk has been modified. The modification either creates new chunk or concatenate two chunks, which would shift the chunks on the right either towards right (when new chunk is created) or left (when two chunks are concatenated). If chunk shift happens, the whole structure of Merkle tree is changed, therefore we would not be able to take advantage of the data structure. To prevent this, Wang et al. (2018) has thought of new data structure called POS tree. The basic idea is to 
 
 ### NOTE
-To configure the program, there is a dependency problem of glib.h, libglib.so, and libssl-dev for the SHA-1 calculation, which is specified in the README in the directory.
+This data structure implements the hash value in SHA-1, which we know it is broken, yet we used it for the simplicity. 
 
 ## 2. undefeatable tic-tac-toe
 ### BRIEF EXPLANATION
